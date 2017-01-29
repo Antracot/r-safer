@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<style type="text/css">
+
+		body{
+			background-color: lightgreen;
+		}
+		.canvas {
+			background: rgba(37,39,40,1);
+			width: 320px;
+			max-height: 568px;
+			height: 568px;
+			margin: 20px auto 0;
+			overflow: hidden;
+			overflow-y: scroll;
+			-webkit-overflow-scrolling: touch;
+			}
+
+		ul {
+			padding: 0;
+			margin: 0;
+			}
+		ul li {
+			list-style: none;
+			}
+
+		.canvas.showing-full {
+			overflow: hidden;
+		}
+		.list .box.full {
+			width: 320px;
+			height: 568px;
+			transform: translate(0, 0);
+			background-color: rgba(0, 0, 0, 1.0);
+			}
+
+		.canvas.showing-full:before {
+			  opacity: 1;
+			}
+
+		.list {
+			position: relative;
+			}
+		.box {
+			display: block;
+			margin: 20px 0;
+			width: 280px;
+			height: 280px;
+			transform: translate(20px, 0);
+			background-position: 50% 0;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-color: rgba(0, 0, 0, 0);
+			-webkit-backface-visibility: hidden;
+			transition: transform .5s ease, width .5s ease, height .5s ease, background-color .5s ease;
+			}
+
+		.box.showing {
+			opacity: 0;
+			}
+
+		.box.full {
+			left: 0;
+			top: 0;
+			width: 280px;
+			height: 280px;
+			transform: translate(0, 0);
+			position: absolute;
+			background-color: gray;
+			z-index: 1;
+			margin: 0;
+
+			}
+
+		.box-1 {
+			background-image:url('https://unsplash.imgix.net/photo-1428930377079-45a584b6dd6b?fit=crop&fm=jpg&h=1000&q=75&w=640');
+			}
+
+		.box-2 {
+			background-image: url('https://unsplash.imgix.net/photo-1428953773181-b4cf23cd7195?fit=crop&fm=jpg&h=1000&q=75&w=640'); 
+			}
+		.box-3 {
+			background-image: url('https://unsplash.imgix.net/photo-1428366890462-dd4baecf492b?fit=crop&fm=jpg&h=1000&q=75&w=640'); 
+			}
+		.box-4 {
+			background-image: url('https://ununsplash.imgix.net/photo-1413834932717-29e7d4714192?fit=crop&fm=jpg&h=1000&q=75&w=640'); 
+			}
+
+		@media screen and (min-device-width: 320px) and (max-device-width: 414px) {
+			body {
+			background: rgba(37,39,40,1);
+			}
+		.canvas {
+			margin: 0 auto;
+			}
+
+		.box {
+			background-attachment: scroll;
+			}
+}
+	</style>
+</head>
+<body>
+<main class="canvas">
+  <ul class="list">
+    <li class="box box-1"></li>
+    <li class="box box-2"></li>
+    <li class="box box-3"></li>
+    <li class="box box-4"></li>
+  </ul>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+// $(function() {
+//     FastClick.attach(document.body);
+// });
+
+// $('.box').click(function() {
+// 	var style = this.currentStyle || window.getComputedStyle(this, false);
+// 	var url = style.backgroundImage;
+// 	url = url.substring(4, url.length-1);
+// 	var canvas = $('.canvas');
+// 	var list = $('.list');
+// 	var box = $('<li>', {
+//     	class: 'box full'
+// 	});
+  
+// 	var position = $(this).position()
+  
+// 	$(this).addClass('showing');
+  
+// 	box.css({
+// 	    'transform': 'translate(' + position.left + 'px,' +(position.top + 20) + 'px)',
+// 	    'backgroundImage': ['url(', url, ')'].join('')
+//   	});
+  
+// 	list.append(box);
+  
+// 	setTimeout(function() {
+// 	    canvas.addClass('showing-full');
+// 	    var left = 0;
+// 	    var top = canvas.scrollTop();
+// 	    box.css({
+//       	'transform': 'translate(' + left + 'px,' +(top - 20) + 'px)'
+//     	});
+// 	  }, 0);
+// 	})
+
+	$('.list').on('click', '.box.full', function() {
+		var canvas = $('.canvas');
+		var box = $(this);
+		var old = $('.list').find('.showing');
+		var position = old.position();
+		box.css({
+    	'transform': 'translate(' + position.left + 'px,' +(position.top + 20) + 'px)'
+  		});
+  	this.addEventListener( 
+    'webkitTransitionEnd', 
+    function(event) {
+		old.removeClass('showing');
+		box.remove();
+		}, false);
+ 	canvas.removeClass('showing-full');	
+	})
+</script>
+</body>
+</html>

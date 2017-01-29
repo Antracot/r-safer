@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+<style></style>
+
+
+<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+
+	<script>loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/media.css?ver=1.0.0", false, "all" );</script>
+
+	<!-- <link media="screen" rel="stylesheet" href="css/madia.css"> -->
+
+	
+	<noscript>	
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+<body>
+
+	<div class="wrap"></div>
+	<div class="background-wrap">
+		<div class="mainVideo">
+	    	<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted" >
+	        <source src="vds/movie.mp4" type="video/mp4">
+	        Your browser does not support the video tag.
+	    	</video>
+		</div>
+		<div class="blurVideo">
+	    	<video id="video-bg-elem1" preload="auto" autoplay="true" loop="loop" muted="muted" >
+	        <source src="vds/movie.mp4" type="video/mp4">
+	        Your browser does not support the video tag.
+	    	</video>
+		</div>
+	</div>
+<!-- 	<div class="background-wrap">
+		<div class="mainVideo">
+	    	<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted" >
+				<source src="vds/movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				<source src="vds/movie.webm" type='video/webm; codecs="vp8, vorbis"' />
+				<source src="vds/movie.ogv" type='video/ogg; codecs="theora, vorbis"' />
+				Video tag not supported. Download the video <a href="vds/movie.webm">here</a>
+	    	</video>
+		</div>
+		<div class="blurVideo">
+	    	<video id="video-bg-elem1" preload="auto" autoplay="true" loop="loop" muted="muted" >
+				<source src="vds/movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				<source src="vds/movie.webm" type='video/webm; codecs="vp8, vorbis"' />
+				<source src="vds/movie.ogv" type='video/ogg; codecs="theora, vorbis"' />
+				Video tag not supported. Download the video <a href="vds/movie.webm">here</a>
+	    	</video>
+		</div>
+	</div> -->
+
+
+
+	<section class="main_page" style="opacity: 0">
+
+			<div class="logos">
+				<img src="img/puls.png" alt="" class="puls">
+				<img src="img/logo.png" alt="" class="img_logo">
+			</div>
+			<div class="menu_wrap">
+				<div class="menu rus">
+					<ul>
+						<li><a href="" data-id="2">Что такое R-SAFER</a></li>
+						<li><a href="" data-id="3">О проблеме</a></li>
+						<li><a href="" data-id="4">Технология и применение</a></li>
+						<li><a href="" data-id="5">Пресса о нас</a></li>
+						<li><a href="" data-id="6">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="menu engl"> 
+					<ul>
+						<li><a href="" data-id="2">What is R-SAFER</a></li>
+						<li><a href="" data-id="3">About</a></li>
+						<li><a href="" data-id="4">Technology</a></li>
+						<li><a href="" data-id="5">Press</a></li>
+						<li><a href="" data-id="6">Contacts</a></li>
+					</ul>
+				</div>
+				<div class="menu china"> 
+					<ul>
+						<li><a href="" data-id="2">什麼是R-SAFE</a></li>
+						<li><a href="" data-id="3">關於</a></li>
+						<li><a href="" data-id="4">技術</a></li>
+						<li><a href="" data-id="5">按</a></li>
+						<li><a href="" data-id="6">聯繫人</a></li>
+					</ul>
+				</div>
+				<div id="line_menu"></div>
+	        </div>
+	       
+			<div class="lang" id="lang">
+				<a href="" id="engl_lang"><p id='e_lang'>english</p></a>
+				<div class="slash" id="f_slash"></div>
+				<a href="" id="china_lang"><p id='c_lang'>中文</p></a>
+				<div class="slash" id="s_slash"></div>
+				<a href="" id="rush_lang"><p id='r_lang'>russian</p></a>
+			</div>
+
+			<div class="footer">
+				<div class="fade_line" id="line"></div>
+				<div class="pre_line"></div>
+				<p class="text_below">Whoever saves one life, saves the world entire.</p>
+				<div class="post_line"></div>
+			</div>			
+	
+   
+
+
+	<div class="slider">
+	  		<div class="slide" id="slide2">
+					<img src="img/item_page2.jpg" alt="" class="img_modems">
+				<div class="page_content" id="page_two">
+      		<div class="line_gorizontal"></div>
+      		<div class="line_vertical"></div>
+					<div class="content_left">
+				        		<div class="text_block rus">
+						        	<h1 class="h1_title">Что такое R-SAFER1</h1>
+						        	<p class="p_text">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.</p>
+				        		</div>
+				        		<div class="text_block engl">
+						        	<h1 class="h1_title">About R-SAFER1</h1>
+						        	<p class="p_text">Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
+				        		</div>
+				        		<div class="text_block china">
+						        	<h1 class="h1_title">什麼是R-SAFE</h1>
+						        	<p class="p_text">文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本  </p>
+				        		</div>
+			    </div>
+				</div>
+			</div>
+
+	  		<div class="slide" id="slide3">
+						<img src="img/item_page3.jpg" alt="" class="img_modems">
+				<div class="page_content " id="page_three">
+						<div class="line_gorizontal"></div>
+      			<div class="line_vertical"></div>
+						<div class="content_left">
+								<div class="text_block rus">
+						        	<h1 class="h1_title">About R-SAFER2</h1>
+						        	<p class="p_text">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.</p>
+				        		</div>
+				        		<div class="text_block engl">
+						        	<h1 class="h1_title">About R-SAFER2</h1>
+						        	<p class="p_text">Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
+				        		</div>
+				        		<div class="text_block china">
+						        	<h1 class="h1_title">什麼是R-SAFE</h1>
+						        	<p class="p_text">文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本  </p>
+				        		</div>
+			       </div>
+					</div>
+	  		</div>
+
+	  		<div class="slide" id="slide4">
+						<img src="img/item_page4.jpg" alt="" class="img_modems">
+					<div class="page_content" id="page_four">
+						<div class="line_gorizontal"></div>
+	      		<div class="line_vertical"></div>
+						<div class="content_left">
+							<div class="text_block rus">
+						        	<h1 class="h1_title">Что такое R-SAFER3</h1>
+						        	<p class="p_text">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.</p>
+				        		</div>
+				        		<div class="text_block engl">
+						        	<h1 class="h1_title">About R-SAFER3</h1>
+						        	<p class="p_text">Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text </p>
+				        		</div>
+				        		<div class="text_block china">
+						        	<h1 class="h1_title">什麼是R-SAFE</h1>
+						        	<p class="p_text">文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本 
+						        	文本 文本 文本 文本 文本 文本 文本 文本 文本  </p>
+				        		</div>
+				    </div>
+					</div>
+	  		</div>
+
+	  		<div class="slide" id="slide5">
+				<div class="background_wrap">
+					<div class="clear_win">
+			  			<img src="img/item_page5.jpg" alt="">
+						<div class="blur_win">
+							<img src="img/item_page5.jpg" alt="" id="blur_img">
+						</div>
+					</div>
+				</div>
+				<div class="page_five" id="page_five">
+					<div class="news_title rus">
+						<h1 class="h1_news_title ">Пресса о нас</h1>
+						<div class="line_news"></div>
+					</div>
+					<div class="news_title engl">
+						<h1 class="h1_news_title">Press about us</h1>
+						<div class="line_news"></div>
+					</div>
+					<div class="news_title china">
+						<h1 class="h1_news_title">報紙關於我們</h1>
+						<div class="line_news"></div>
+					</div>
+
+						<div class="scroll_window" id="scroll_win">
+							<div class="scroll_window_wrap" id="scroll_win_wrap">
+
+
+
+							</div>
+						</div>
+					<!-- </div> -->
+					<div id="slider"></div>	
+				</div>
+				<div class="popup_news hidden">
+					<div class="details_big">
+					</div>
+				</div>
+	  		</div>
+
+	  		<div class="slide" id="slide6">
+	  				<!-- <img src="img/item_page6.jpg" alt="" class="img_modem_ite6"> -->
+				<div class="page_six ">
+					<div class="form rus">
+						<form action="ajax/mail.php" method="post" value="rus">
+
+							<input type="hidden" name="project_name" value="R-Safer webpage">
+	                        <input type="hidden" name="admin_email" value="">
+	                        <input type="hidden" name="form_subject" value="Новая заявка с сайта R-Safer - (русская версия)">
+
+							<div class="inputs" id="input_area">
+								<input type="text" name="name" class="input inp1" placeholder="Имя" required>
+
+								<input type="text" name="email" class="input inp2" placeholder="Email" required>
+								<div class="line_name"></div>
+								<div class="line_mail"></div>
+							</div>
+							<div class="subject">
+								<input type="text" name="subj" class="input_long" placeholder="Тема">
+								<div class="line_tema"></div>
+							</div>
+							<div class="textarea" >
+								<textarea name="mess" cols="30" rows="10" placeholder="Сообщение" required></textarea>
+								<div class="line_txt"></div>
+						</div>
+							<div class="send_btn">
+								<input class="button" type="submit" value="Отправить">
+							</div>
+						</form>	
+					</div>
+					<div class="form engl">
+
+						<form action="ajax/mail.php" method="post" value="eng">
+
+							<input type="hidden" name="project_name" value="R-Safer webpage">
+	                        <input type="hidden" name="admin_email" value="">
+	                        <input type="hidden" name="form_subject" value="Новая заявка с сайта R-Safer - (английская версия)">
+
+							<div class="inputs">
+								<input type="text" name="name" class="input inp1" placeholder="Name" required>
+
+								<input type="text" name="email" class="input inp2" placeholder="Email" required>
+								<div class="line_name"></div>
+								<div class="line_mail"></div>
+							</div>
+							<div class="subject">
+								<input type="text" name="subj" class="input_long" placeholder="Subject">
+								<div class="line_tema"></div>
+							</div>
+							<div class="textarea" >
+								<textarea name="mess" cols="30" rows="10" placeholder="Message" required></textarea>
+								<div class="line_txt"></div>
+							</div>
+							<div class="send_btn">
+								<input class="button" type="submit" value="Send">
+							</div>
+						</form>	
+					</div>
+					<div class="form china">
+						<form action="ajax/mail.php" method="post" value="ch">
+
+							<input type="hidden" name="project_name" value="R-Safer webpage">
+	                        <input type="hidden" name="admin_email" value="">
+	                        <input type="hidden" name="form_subject" value="Новая заявка с сайта R-Safer - (китайская версия)">
+
+							<div class="inputs">
+								<input type="text" name="name" class="input inp1" placeholder="名" required>
+
+								<input type="text" name="email" class="input inp2" placeholder="Email" required>
+								<div class="line_name"></div>
+								<div class="line_mail"></div>
+							</div>
+							<div class="subject">
+								<input type="text" name="subj" class="input_long" placeholder="主題">
+								<div class="line_tema"></div>
+							</div>
+							<div class="textarea" >
+								<textarea name="mess" cols="30" rows="10" placeholder="信息" required></textarea>
+								<div class="line_txt"></div>
+							</div>
+							<div class="send_btn">
+								<input class="button" type="submit" value="送">
+							</div>
+						</form>	
+					</div>
+				</div>
+	  		</div>
+		</div>
+
+		 <div class="play_btn">
+	        		<a href="#"><img src="img/play_bnt.png" alt="play_bnt" class="play_btn_img"></a>
+	    </div>	
+
+		 <a href="#" class="arrow" id="l_arrow"><img src="img/l_arrow.png" alt="" ></a>
+		 <a href="#" class="arrow" id="r_arrow"><img src="img/r_arrow.png" alt=""></a>
+		
+<div class="popup_success hidden" id="popup_eng">		
+	<div class="message">
+		<p class="p_popup">Thank you!<br>One of our advisors will<br>contact you very soon to discuss<br>your requirements in more detail.</p>
+	</div>
+</div>
+<div class="popup_success hidden" id="popup_rus">
+	<div class="message">
+   		<p class="p_popup">Спасибо за ваше сообщение!<br>Наши менеджеры свяжуться с вами <br>в ближайшее время.</p>
+	</div>
+</div>
+<div class="popup_success hidden" id="popup_china">
+	<div class="message">
+   		<p class="p_popup">感谢您的留言!<br>我们的经理将与您联系<br>即将推出.</p>
+	</div>
+</div>
+
+
+</section>	
+
+<div class="loader"></div>
+
+
+	<script>var scr = {"scripts":[
+	{"src" : "js/libs.js", "async" : false},
+	{"src" : "js/main.js", "async" : false}
+	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+
+</body>
+</html>
